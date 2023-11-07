@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-
+        
       - name: AI Code Reviewer
         uses: febryituery/sample-code-reviewer-ai@main
         with:
