@@ -10,11 +10,11 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - name: AI Code Review Action
-        uses: freeedcom/ai-codereviewer@v2.6.0
-        
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
       - name: AI Code Reviewer
-        uses: febryituery/sample-code-reviewer-ai@main
+        uses: febryituery/ai-code-reviewer@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
